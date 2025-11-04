@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NACOS Comp Science Election - Vote Now</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="min-h-screen flex items-center justify-center p-4">
+
+    <div id="app-container" class="w-full max-w-2xl bg-white rounded-xl card p-6 md:p-10">
+        <header class="text-center mb-8">
+            <h1 class="text-3xl font-extrabold text-gray-800">The Federal Polytechnic Ado-Ekiti</h1>
+            <h2 class="text-xl font-bold text-teal-600 mt-1">NACOS Computer Science Election 2025 🗳️</h2>
+        </header>
+
+        <div id="content" class="text-center min-h-[300px] flex items-center justify-center">
+            
+            <div id="welcome-page" class="space-y-6">
+                <h2 class="text-2xl font-bold text-gray-800">Welcome to the NACOS Election Portal 🎓</h2>
+                <p class="text-gray-600">Cast your vote securely and anonymously for the 2025 Computer Science election.</p>
+                <button id="start-vote-btn" class="button-primary px-6 py-3 text-white font-semibold text-lg shadow-md transition transform hover:scale-[1.02]">
+                    Start Voting
+                </button>
+            </div>
+            
+            <div id="firebase-section" class="hidden w-full">
+                <div class="p-8 text-center text-gray-500">
+                    <svg class="animate-spin h-8 w-8 mx-auto text-teal-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"><circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle><path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path></svg>
+                    <p class="mt-2">Verifying voter eligibility...</p>
+                </div>
+            </div>
+
+        </div>
+        
+        <footer class="mt-8 text-xs text-gray-400 text-center">
+            <p>Your vote is secured and recorded anonymously by your unique device ID.</p>
+        </footer>
+    </div>
+
+    <script type="module" src="script.js"></script>
+</body>
+</html>
